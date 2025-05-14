@@ -1,8 +1,54 @@
 {
   "layerTree": [
-    "e220d708-c851-4f54-b9ae-9c56c5e04480"
+    "e220d708-c851-4f54-b9ae-9c56c5e04480",
+    "60f63db4-01e7-410e-be14-fbc63e53993d",
+    "db66074e-dc50-4eab-9f75-2554196ce073"
   ],
   "layers": {
+    "60f63db4-01e7-410e-be14-fbc63e53993d": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "SEEC and NSIDC",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "f9f45829-ff0d-48c1-b524-c4d2db66180f",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "db66074e-dc50-4eab-9f75-2554196ce073": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "My module-1 dataset",
+      "parameters": {
+        "color": null,
+        "opacity": 1.0,
+        "source": "5b92ecae-e71f-4c60-9233-e5db5212e9eb",
+        "symbologyState": null,
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
     "e220d708-c851-4f54-b9ae-9c56c5e04480": {
       "name": "Basemap",
       "parameters": {
@@ -16,19 +62,84 @@
   "options": {
     "bearing": 0.0,
     "extent": [
-      -16943218.227214247,
-      1813884.940591243,
-      -5539788.477108987,
-      8661878.212775469
+      -11718247.071394065,
+      4865784.97634188,
+      -11713467.593378471,
+      4869218.724234647
     ],
-    "latitude": 42.51130981651042,
-    "longitude": -100.98414277727615,
+    "latitude": 40.01073133406811,
+    "longitude": -105.2453370824635,
     "pitch": 0.0,
     "projection": "EPSG:3857",
-    "zoom": 4.3991367692285905
+    "zoom": 14.839306307991531
   },
   "schemaVersion": "0.5.0",
   "sources": {
+    "5b92ecae-e71f-4c60-9233-e5db5212e9eb": {
+      "name": "My module-1 dataset Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -122.25754047719431,
+                  37.87381567413291
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "Evans Hall, University Drive, Berkeley, CA 94720",
+                "Name": "Evans Hall, UC Berkeley"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
     "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce": {
       "name": "Esri.WorldGrayCanvas",
       "parameters": {
@@ -42,6 +153,54 @@
         }
       },
       "type": "RasterSource"
+    },
+    "f9f45829-ff0d-48c1-b524-c4d2db66180f": {
+      "name": "SEEC and NSIDC Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
     }
   }
 }
